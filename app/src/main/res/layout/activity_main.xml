@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/editTextDistance"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Dystans (km)"
+        android:inputType="numberDecimal"
+        android:layout_marginTop="16dp"/>
+
+    <EditText
+        android:id="@+id/editTextTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Czas trwania (minuty)"
+        android:inputType="number"
+        android:layout_marginTop="16dp"/>
+
+    <EditText
+        android:id="@+id/editTextCalories"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Spalone kalorie"
+        android:inputType="number"
+        android:layout_marginTop="16dp"/>
+
+
+    <SeekBar
+        android:id="@+id/seekBarIntensity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Niska                                     Średnia                                   Wysoka"/>
+
+
+    <RadioGroup
+        android:id="@+id/radioGroupActivityType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="16dp">
+
+        <RadioButton
+            android:id="@+id/radioButtonWalk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Spacer"/>
+
+        <RadioButton
+            android:id="@+id/radioButtonRun"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bieg"/>
+
+        <RadioButton
+            android:id="@+id/radioButtonStrengthTraining"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Trening siłowy"/>
+    </RadioGroup>
+
+
+    <Button
+        android:id="@+id/buttonAddTraining"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dodaj trening"
+        android:layout_marginTop="16dp"/>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewTrainings"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp"
+        android:layout_weight="1"/>
+
+</LinearLayout>
